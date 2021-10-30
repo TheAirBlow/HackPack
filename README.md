@@ -5,4 +5,4 @@
 
 [REHack](https://github.com/TheAirBlow/HackPack/blob/main/REHack.md) - взлом Resh.edu.ru
 
-[Injector Template](https://github.com/TheAirBlow/HackPack/tree/main/template) - пример плагина для inject'а кода
+[Injector Template](https://github.com/TheAirBlow/HackPack/tree/main/template) - пример плагина для встраивания кода
