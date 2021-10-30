@@ -4,10 +4,6 @@ var style3 = 'background: #222; color: #00ff00; border-radius: 3px; padding: 1px
 var style4 = 'background: #222; color: #ff0000; border-radius: 3px; padding: 1px; margin: 1px';
 var style5 = 'background: #222; color: #ffffff; border-radius: 3px; padding: 1px; margin: 1px';
 
-console.warn("%c[UchiHack]" + `%c Скрипт был написан TheAirBlow, версия ${globalThis.UchiHack.version} `, style1, style5);
-console.warn("%c[UchiHack]" + "%c Оригинально выложен на Github Gists ", style1, style5);
-console.warn("%c[UchiHack]" + "%c Если вы это купили, вас заскамили ", style1, style5);
-
 $('body').ready(() => {
     function data() {
         if (typeof UchiHack !== 'undefined') return;
@@ -16,6 +12,9 @@ $('body').ready(() => {
         globalThis.UchiHack.count = 0;
         globalThis.UchiHack.isOld = false;
         globalThis.UchiHack.version = "v2.2.5";
+        console.warn("%c[UchiHack]" + `%c Скрипт был написан TheAirBlow, версия ${globalThis.UchiHack.version} `, style1, style5);
+        console.warn("%c[UchiHack]" + "%c Оригинально выложен на Github Gists ", style1, style5);
+        console.warn("%c[UchiHack]" + "%c Если вы это купили, вас заскамили ", style1, style5);
         
         if (typeof Card === 'undefined') {
             console.error("%c[UchiHack]" + "%c Это не карточка uchi.ru! ", style1, style4);
