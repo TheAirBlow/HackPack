@@ -10,7 +10,7 @@ console.warn("%c[UchiHack]" + "%c Если вы это купили, вас за
 
 $('body').ready(() => {
     function data() {
-        if (typeof globalThis.UchiHacke !== 'undefined') return;
+        if (typeof UchiHack !== 'undefined') return;
         
         globalThis.UchiHack = {};
         globalThis.UchiHack.count = 0;
