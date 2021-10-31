@@ -39,14 +39,18 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQY
 Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
 
 ### Tampermonkey
-**Внимание! Устаревший способ.**
 1) Установите плагин `Tampermonkey`
-2) Нажмите [суда](https://gist.github.com/TheAirBlow/2c58db73707a731ca2931a2a3bd3396a/raw/code.user.js)
-3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru*/cards/*` и `https://uchi.ru*/unusual_cards/*`
+2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/uchihack/code.user.js)
+3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru*/cards/*`
 4) Открыть карточку на Uchi.ru
 5) Готово!
 
 Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
+
+### Плагин Firefox
+**Плагин на рассмотрении.**
+
+Подождите, пока оно будет выложено.
 
 ## Что делать, если не сработало или выдало ошибку?
 **Я не собираюсь как-либо отвечать на письма про олимпиады.**
