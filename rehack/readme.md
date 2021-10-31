@@ -30,9 +30,7 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQY
 2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/rehack/code.user.js)
 3) В настройках скрипта -> `User matches` добавьте `https://resh.edu.ru/subject/lesson/*/train/*` и `https://resh.edu.ru/subject/lesson/*/control/*`
 4) Открыть задание на Resh.edu.ru
-5) Открыть `Код элемента`
-6) Открыть вкладку `Сonsole`
-7) Готово!
+5) Готово!
 
 Пролестните вниз и вы увидете кнопки.
 
