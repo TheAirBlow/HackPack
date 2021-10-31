@@ -25,10 +25,9 @@
 ## Как использовать
 ##### Упоминается как: Загрузить хак, загрузить скрипт
 ### Консольный скрипт
-**Внимание! Устаревший способ.**
-1) Скопируйте это (загружает последнюю версию): 
+1) Скопируйте это (загружает v2.2.5-fix3): 
 ```js
-eval(atob("ZmV0Y2goJ2h0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vVGhlQWlyQmxvdy8yYzU4ZGI3MzcwN2E3MzFjYTI5MzFhMmEzYmQzMzk2YS9yYXcvY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
+eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQYWNrQHVjaGloYWNrLTIuMi41LWZpeDMvdWNoaWhhY2svY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
 ```
 2) Открыть карточку на Uchi.ru
 3) Открыть `Код элемента`
