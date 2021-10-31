@@ -5,7 +5,7 @@ var style5 = 'background: #222; color: #ffffff; border-radius: 3px; padding: 1px
 
 if (typeof REHack === 'undefined') {
     globalThis.REHack = {};
-    console.warn("%c[REHack]" + "%c Скрипт был написан TheAirBlow, версия v1.0.2 ", style1, style5);
+    console.warn("%c[REHack]" + "%c Скрипт был написан TheAirBlow, версия v1.0.4 ", style1, style5);
     console.warn("%c[REHack]" + "%c Оригинально выложен на Github Gists ", style1, style5);
     console.warn("%c[REHack]" + "%c Если вы это купили, вас заскамили ", style1, style5);
 
@@ -25,11 +25,11 @@ if (typeof REHack === 'undefined') {
         $(".test__task-num.test__task-num--with-error").prop("class", "test__task-num test__task-num--passed");
         var f = $(".lk-form-submit.js-result").html().match(/\d+$/);
         $(".lk-form-submit.js-result").html("Пройдено " + f + " из " + f);
-        setTimeout(tick, 50);
+        setTimeout(tick, 1000);
     }
 
     $("body").ready(function() {
-        setTimeout(tick, 50);
+        setTimeout(tick, 1000);
     });
 
     console.log("%c[REHack]" + "%c Скрипт был успешно завершен, а значит, загружен. ", style1, style3);
