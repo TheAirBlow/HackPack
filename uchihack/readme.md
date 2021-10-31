@@ -25,10 +25,9 @@
 ## Как использовать
 ##### Упоминается как: Загрузить хак, загрузить скрипт
 ### Консольный скрипт
-**Внимание! Устаревший способ.**
-1) Скопируйте это (загружает последнюю версию): 
+1) Скопируйте это (загружает v2.2.5-fix3): 
 ```js
-eval(atob("ZmV0Y2goJ2h0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vVGhlQWlyQmxvdy8yYzU4ZGI3MzcwN2E3MzFjYTI5MzFhMmEzYmQzMzk2YS9yYXcvY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
+eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQYWNrQHVjaGloYWNrLTIuMi41LWZpeDMvdWNoaWhhY2svY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
 ```
 2) Открыть карточку на Uchi.ru
 3) Открыть `Код элемента`
@@ -40,14 +39,19 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vVGhlQWlyQmxvd
 Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
 
 ### Tampermonkey
-**Внимание! Устаревший способ.**
 1) Установите плагин `Tampermonkey`
-2) Нажмите [суда](https://gist.github.com/TheAirBlow/2c58db73707a731ca2931a2a3bd3396a/raw/code.user.js)
-3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru*/cards/*` и `https://uchi.ru*/unusual_cards/*`
+2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/uchihack/code.user.js)
+3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru*/cards/*`
 4) Открыть карточку на Uchi.ru
 5) Готово!
 
 Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
+
+### Плагин Firefox
+*Плагин на рассмотрении -* подождите, пока оно будет выложено.
+
+### Плагин Chrome
+*Плагин не загружен -* подождите, пока я загружу его на маркетплейс.
 
 ## Что делать, если не сработало или выдало ошибку?
 **Я не собираюсь как-либо отвечать на письма про олимпиады.**

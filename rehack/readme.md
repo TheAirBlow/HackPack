@@ -11,10 +11,9 @@
 
 ## Как использовать
 ### Консольный скрипт
-**Внимание! Устаревший способ.**
-1) Скопируйте это (загружает последнюю версию): 
+1) Скопируйте это (загружает v1.0.3): 
 ```js
-eval(atob("ZmV0Y2goJ2h0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vVGhlQWlyQmxvdy84ZDAwNzI5ZDY4ZTU1OTI4OTEyMjNlNzY4MGRiMTQ1Yy9yYXcvY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
+eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQYWNrQHJlaGFjay0xLjAuMy9yZWhhY2svY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
 ```
 2) Открыть задание на Resh.edu.ru
 3) Открыть `Код элемента`
@@ -26,16 +25,21 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vVGhlQWlyQmxvd
 Пролестните вниз и вы увидете кнопки.
 
 ### Tampermonkey
-**Внимание! Устаревший способ.**
 1) Установите плагин `Tampermonkey`
-2) Нажмите [суда](https://gist.githubusercontent.com/TheAirBlow/8d00729d68e5592891223e7680db145c/raw/code.user.js)
+2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/rehack/code.user.js)
 3) В настройках скрипта -> `User matches` добавьте `https://resh.edu.ru/subject/lesson/*/train/*` и `https://resh.edu.ru/subject/lesson/*/control/*`
 4) Открыть задание на Resh.edu.ru
 5) Открыть `Код элемента`
 6) Открыть вкладку `Сonsole`
 7) Готово!
 
-Пролестните вниз и вы увидете кнопки. 
+Пролестните вниз и вы увидете кнопки.
+
+### Плагин Firefox
+*Плагин не загружен -* подождите, пока я загружу его на маркетплейс.
+
+### Плагин Chrome
+*Плагин не загружен -* подождите, пока я загружу его на маркетплейс.
 
 ## Что делать, если не сработало или выдало ошибку?
 
