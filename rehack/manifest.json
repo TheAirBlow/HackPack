@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
     "name": "REHack",
-    "version": "1.0.3",
+    "version": "1.0.4",
 
     "author": "TheAirBlow",
-    "description": "Injects REHack v1.0.3",
+    "description": "Injects REHack v1.0.4",
     "permissions": [ "<all_urls>", "tabs", "activeTab", "storage", "webNavigation" ],
 
     "background": {
