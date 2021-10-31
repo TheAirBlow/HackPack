@@ -8,6 +8,19 @@ $('body').ready(() => {
     function data() {
         if (typeof UchiHack !== 'undefined') return;
         
+        if (typeof Card.Player.__score === 'undefined') {
+            setTimeout(data, 50);
+            return;
+        }
+        
+        globalThis.UchiHack = {};
+        globalThis.UchiHack.count = 0;
+        globalThis.UchiHack.isOld = false;
+        globalThis.UchiHack.version = "v2.2.5";
+        console.warn("%c[UchiHack]" + `%c Скрипт был написан TheAirBlow, версия ${globalThis.UchiHack.version} `, style1, style5);
+        console.warn("%c[UchiHack]" + "%c Оригинально выложен на Github Gists ", style1, style5);
+        console.warn("%c[UchiHack]" + "%c Если вы это купили, вас заскамили ", style1, style5);
+        
         if (typeof Card === 'undefined') {
             console.error("%c[UchiHack]" + "%c Это не карточка uchi.ru! ", style1, style4);
             return;
@@ -22,19 +35,6 @@ $('body').ready(() => {
             console.log("%c[UchiHack]" + "%c Включена поддержка старых карточек! ", style1, style3);
             globalThis.UchiHack.isOld = true;
         }
-
-        if (typeof Card.Player.__score === 'undefined') {
-            setTimeout(data, 50);
-            return;
-        }
-        
-        globalThis.UchiHack = {};
-        globalThis.UchiHack.count = 0;
-        globalThis.UchiHack.isOld = false;
-        globalThis.UchiHack.version = "v2.2.5";
-        console.warn("%c[UchiHack]" + `%c Скрипт был написан TheAirBlow, версия ${globalThis.UchiHack.version} `, style1, style5);
-        console.warn("%c[UchiHack]" + "%c Оригинально выложен на Github Gists ", style1, style5);
-        console.warn("%c[UchiHack]" + "%c Если вы это купили, вас заскамили ", style1, style5);
 
         globalThis.UchiHack.do_event = function(a, b) {
             console.log("%c[UchiHack]" + "%c Отправляем event серверу... ", style1, style2);
