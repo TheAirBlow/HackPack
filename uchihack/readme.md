@@ -42,7 +42,7 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQY
 ### Tampermonkey
 1) Установите плагин `Tampermonkey`
 2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/uchihack/code.user.js)
-3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru*/cards/*`
+3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru/cards/*` и `https://uchi.ru/subject/*/students/homeworks/*/cards/*`
 4) Открыть карточку на Uchi.ru
 5) Готово!
 
