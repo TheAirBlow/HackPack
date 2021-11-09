@@ -35,10 +35,7 @@ eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQY
 Пролестните вниз и вы увидете кнопки.
 
 ### Плагин Firefox
-*Плагин на рассмотрении -* подождите, пока оно будет выложено.
-
-### Плагин Chrome
-*Плагин не загружен -* подождите, пока я загружу его на маркетплейс.
+https://addons.mozilla.org/addon/rehack/
 
 ## Что делать, если не сработало или выдало ошибку?
 
