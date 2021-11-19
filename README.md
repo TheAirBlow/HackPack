@@ -1,7 +1,5 @@
 # HackPack
-Тут собраны все мои "взломы" сайтов - названы они так для привлечения внимания.
-
-Они ничего не взламывают, а используют функции самого же сайта (`client-side`).
+![Oh God Why](https://media1.tenor.com/images/467d353f7e2d43563ce13fddbb213709/tenor.gif?itemid=12136175)
 
 [UchiHack](https://github.com/TheAirBlow/HackPack/blob/main/uchihack) - взлом Uchi.ru
 
