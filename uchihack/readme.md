@@ -1,4 +1,4 @@
-## UchiHack
+# UchiHack
 This is a script that can solve everything on Uchi.ru, except:
 * Olympiads
 * Games
