@@ -29,7 +29,7 @@ This is a script that can solve everything on Uchi.ru, except:
 **Warning!** Console script and tampermonkey are now deprecated.
 
 ### Firefox Plugin
-Version v2.3.0\
+Version v2.2.5-fix4\
 https://addons.mozilla.org/addon/uchihack/
 
 ## How to report bugs?
