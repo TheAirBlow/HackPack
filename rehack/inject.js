@@ -7,6 +7,6 @@ if (wildcard(location.href, "https://resh.edu.ru/subject/lesson/*/train/*")
     || wildcard(location.href, "https://resh.edu.ru/subject/lesson/*/control/*")) {
     var el = document.createElement('script');
     el.setAttribute('type', 'text/javascript');
-    el.src = "https://cdn.jsdelivr.net/gh/TheAirBlow/HackPack@rehack-1.0.4/rehack/code.js";
+    el.src = browser.runtime.getURL("code.js");
     document.head.append(el);
 }
