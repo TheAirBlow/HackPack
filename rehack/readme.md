@@ -19,8 +19,6 @@ Version v1.0.4\
 https://addons.mozilla.org/addon/rehack/
 
 ## How to report bugs?
-**I will ignore anything related to olympiads.**
-
 * Open [link](https://theairblow.github.io/)
 * Scroll down
 * Press the e-mail button
