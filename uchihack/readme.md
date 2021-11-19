@@ -24,29 +24,7 @@
 * v2.2.5-fix4 - фикс багов
 
 ## Как использовать
-##### Упоминается как: Загрузить хак, загрузить скрипт
-### Консольный скрипт
-1) Скопируйте это (загружает v2.2.5-fix3): 
-```js
-eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQYWNrQHVjaGloYWNrLTIuMi41LWZpeDMvdWNoaWhhY2svY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
-```
-2) Открыть карточку на Uchi.ru
-3) Открыть `Код элемента`
-4) Открыть вкладку `Сonsole`
-5) Вставте скопированный текст
-   * Если вы увидете предупреждение, напишите "allow pasting" и повторите вставку еще раз
-6) Готово!
-
-Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
-
-### Tampermonkey
-1) Установите плагин `Tampermonkey`
-2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/uchihack/code.user.js)
-3) В настройках скрипта -> `User matches` добавьте `https://uchi.ru/cards/*` и `https://uchi.ru/subject/*/students/homeworks/*/cards/*`
-4) Открыть карточку на Uchi.ru
-5) Готово!
-
-Все остальное по типу решения задачи будет объяснено в консоли, либо же используйте кнопки снизу.
+**Внимание!** Консольный скрипт и Tampermonkey больше не поддерживаются!
 
 ### Плагин Firefox
 https://addons.mozilla.org/addon/uchihack/
