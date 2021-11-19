@@ -1,35 +1,35 @@
 # Взлом Resh.Edu.ru
-Данный скрипт прорешает любое задание на Resh.Edu.ru, включая контрольные.
+This script will solve any test on Resh.Edu.ru.
 
-**Я не несу ответсвенность за возможные проблемы после использования этого скрипта.**
+**THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES.**\
+**IT DOESN'T HACK ANYTHING. IT IS A CLIENT-SIDE THING THAT UTILIZES UNMODIFIED UCHI.RU FUNCTIONS.**
 
 ## Последние изменения
-* v1.0.0 - первая версия
-* v1.0.1 - отображать `Скрыть неверные` только после проверки
-* v1.0.2 - автоматически решает каждое загруженное задание
-* v1.0.3 - не загружать хак, если он уже загружен
-* v1.0.4 - понизить время каждого тика
+* v1.0.0 - first version
+* v1.0.1 - <old stuff>
+* v1.0.2 - automatically solve, remove buttons
+* v1.0.3 - do not load if already loaded
+* v1.0.4 - all setTimeouts' times were decreased
 
-## Как использовать
-**Внимание!** Консольный скрипт и Tampermonkey больше не поддерживаются!
+## How to use
+**Warning!** Console script and tampermonkey are now deprecated.
 
-### Плагин Firefox
+### Firefox Plugin
+Version v1.0.4\
 https://addons.mozilla.org/addon/rehack/
 
-## Что делать, если не сработало или выдало ошибку?
+## How to report bugs?
+**I will ignore anything related to olympiads.**
 
-Напишите мне на почту: [ссылка на сайт](https://theairblow.github.io/)
-1) Откройте сайт
-2) Пролестните вниз
-3) Нажмите на кнопочку в виде конверта
-
-Напишите в своем письме:
-1) Ссылку на задание
-2) Ошибку, которую выдало
-3) Что вы делали перед появлением ошибки
+* Open [link](https://theairblow.github.io/)
+* Scroll down
+* Press the e-mail button
+* Write link to the test
+* Write error that was thrown
+* Write how to reproduce it
 
 ## FAQ
-### Как это работает?
-Resh.Edu.ru никогда не удаляет функцию отображения ответов, а скрывает кнопку для неё. 
+### How it works?
+Resh.Edu.ru never deletes the button so solve the exercise, it just hides it. 
 
-Этот скрипт вовзращает её функционал.
+This script uses it's code to automatically solve the test.
