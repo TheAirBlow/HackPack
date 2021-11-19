@@ -6,7 +6,7 @@ This script will solve any test on Resh.Edu.ru.
 
 ## Последние изменения
 * v1.0.0 - first version
-* v1.0.1 - <old stuff>
+* v1.0.1 - fuck that
 * v1.0.2 - automatically solve, remove buttons
 * v1.0.3 - do not load if already loaded
 * v1.0.4 - all setTimeouts' times were decreased
