@@ -1,4 +1,4 @@
-# Взлом Resh.Edu.ru
+# Resh.Edu.ru hack
 This script will solve any test on Resh.Edu.ru.
 
 **THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES.**\
