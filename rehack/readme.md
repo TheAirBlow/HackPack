@@ -11,28 +11,7 @@
 * v1.0.4 - понизить время каждого тика
 
 ## Как использовать
-### Консольный скрипт
-1) Скопируйте это (загружает v1.0.3): 
-```js
-eval(atob("ZmV0Y2goJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9UaGVBaXJCbG93L0hhY2tQYWNrQHJlaGFjay0xLjAuNC9yZWhhY2svY29kZS5qcycpLnRoZW4odiA9PiB7di50ZXh0KCkudGhlbih0eHQgPT4ge2V2YWwodHh0KX0pfSk="))
-```
-2) Открыть задание на Resh.edu.ru
-3) Открыть `Код элемента`
-4) Открыть вкладку `Сonsole`
-5) Вставте скопированный текст
-   * Если вы увидете предупреждение, напишите "allow pasting" и повторите вставку еще раз
-6) Готово!
-
-Пролестните вниз и вы увидете кнопки.
-
-### Tampermonkey
-1) Установите плагин `Tampermonkey`
-2) Нажмите [суда](https://github.com/TheAirBlow/HackPack/raw/main/rehack/code.user.js)
-3) В настройках скрипта -> `User matches` добавьте `https://resh.edu.ru/subject/lesson/*/train/*` и `https://resh.edu.ru/subject/lesson/*/control/*`
-4) Открыть задание на Resh.edu.ru
-5) Готово!
-
-Пролестните вниз и вы увидете кнопки.
+**Внимание!** Консольный скрипт и Tampermonkey больше не поддерживаются!
 
 ### Плагин Firefox
 https://addons.mozilla.org/addon/rehack/
