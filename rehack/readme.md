@@ -1,33 +1,36 @@
-# Resh.Edu.ru hack
-This script will solve any test on Resh.Edu.ru.
+# Взлом Resh.Edu.ru
+Данный скрипт прорешает любое задание на Resh.Edu.ru, включая контрольные.
 
-**THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES.**\
-**IT DOESN'T HACK ANYTHING. IT IS A CLIENT-SIDE THING THAT UTILIZES UNMODIFIED UCHI.RU FUNCTIONS.**
+**Я не несу ответсвенность за возможные проблемы после использования этого скрипта.**
 
 ## Последние изменения
-* v1.0.0 - first version
-* v1.0.1 - fuck that
-* v1.0.2 - automatically solve, remove buttons
-* v1.0.3 - do not load if already loaded
-* v1.0.4 - all setTimeouts' times were decreased
+* v1.0.0 - первая версия
+* v1.0.1 - отображать `Скрыть неверные` только после проверки
+* v1.0.2 - автоматически решает каждое загруженное задание
+* v1.0.3 - не загружать, если уже загружен
+* v1.0.4 - время ожидания понижено
 
-## How to use
-**Warning!** Console script and tampermonkey are now deprecated.
+## Как использовать
+**Внимание!** Консольный скрипт и Tampermonkey больше не поддерживаются.
 
-### Firefox Plugin
-Version v1.0.4\
+### Аддон Firefox
+Версия v1.0.4 \
 https://addons.mozilla.org/addon/rehack/
 
-## How to report bugs?
-* Open [link](https://theairblow.github.io/)
-* Scroll down
-* Press the e-mail button
-* Write link to the test
-* Write error that was thrown
-* Write how to reproduce it
+## Что делать, если не сработало или выдало ошибку?
+
+Напишите мне на почту: [ссылка на сайт](https://theairblow.github.io/)
+1) Откройте сайт
+2) Пролестните вниз
+3) Нажмите на кнопочку в виде конверта
+
+Напишите в своем письме:
+1) Ссылку на задание
+2) Ошибку, которую выдало
+3) Что вы делали перед появлением ошибки
 
 ## FAQ
-### How it works?
-Resh.Edu.ru never deletes the button so solve the exercise, it just hides it. 
+### Как это работает?
+Resh.Edu.ru никогда не удаляет функцию отображения ответов, а скрывает кнопку для неё. 
 
-This script uses it's code to automatically solve the test.
+Этот скрипт вовзращает её функционал.
