@@ -1,60 +1,75 @@
-# UchiHack
-This is a script that can solve everything on Uchi.ru, except:
-* Olympiads
-* Games
+# Взлом Uchi.ru
+Данный скрипт прорешает любое задание на Uchi.ru, кроме:
+* Олимпиад
+* Игр
 
-**THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES.**\
-**IT DOESN'T HACK ANYTHING. IT IS A CLIENT-SIDE THING THAT UTILIZES UNMODIFIED UCHI.RU FUNCTIONS.**
+**Я не несу ответсвенность за возможные проблемы после использования этого скрипта.**
 
-## Changelog
-* v0.1.0 - shitcode
-* v1.0.0 - first version
-* v1.1.0 - old exercises
-* v1.1.1 - bugfix
-* v2.0.0 - control buttons on left
-* v2.1.0 - now they are on bottom, looks better
-* v2.2.0 - status
-* v2.2.1 - bugfix
-* v2.2.2 - decreased `__score` setTimeout time
-* v2.2.3 - show version
-* v2.2.4 - all setTimeouts' times were decreased
-* v2.2.5 - do not load if already loaded
-* v2.2.5-fix - bugfix
-* v2.2.5-fix2 - bugfix
-* v2.2.5-fix3 - bugfix
-* v2.2.5-fix4 - bugfix
-* v2.3.0 - english instead of russian, a lot of comments
+## Последние изменения
+* v0.1.0 - говнокод
+* v1.0.0 - первая версия
+* v1.1.0 - старые карточки
+* v1.1.1 - фикс багов
+* v2.0.0 - кнопки для управления слева
+* v2.1.0 - кнопки теперь снизу, выглядит лучше
+* v2.2.0 - отображение статуса
+* v2.2.1 - фикс багов
+* v2.2.2 - уменьшили время ожидания `__score` каждую секунду
+* v2.2.3 - отображение версии
+* v2.2.4 - ускорили все таймауты, ожидание пока запрос будет сделан а не ждать секунду
+* v2.2.5 - не загружать, если плагин уже загружен
+* v2.2.5-fix - фикс багов
+* v2.2.5-fix2 - фикс баговфикс багов
+* v2.2.5-fix3 - фикс багов
+* v2.2.5-fix4 - фикс багов
+* v2.3.0 - комментарии
 
-## How to use
-**Warning!** Console script and tampermonkey are now deprecated.
+## Как использовать
+**Внимание!** Консольный скрипт и Tampermonkey больше не поддерживаются.
 
-### Firefox Plugin
-Version v2.3.0\
+### Аддон Firefox
+Версия v2.3.0 \
 https://addons.mozilla.org/addon/uchihack/
 
-## How to report bugs?
-**I will ignore anything related to olympiads.**
+## Что делать, если не сработало или выдало ошибку?
+**Я не собираюсь как-либо отвечать на письма про олимпиады.**
 
-* Open [link](https://theairblow.github.io/)
-* Scroll down
-* Press the e-mail button
-* Write link to the exercise
-* Write error that was thrown
-* Write how to reproduce it
+Напишите мне на почту: [ссылка на сайт](https://theairblow.github.io/)
+1) Откройте сайт
+2) Пролестните вниз
+3) Нажмите на кнопочку в виде конверта
+
+Напишите в своем письме:
+1) Ссылку на карточку
+2) Ошибку, которую выдало
+3) Что вы делали перед появлением ошибки
 
 ## FAQ
-### How it works?
-Uchi.ru checks answers `server-side`, not `client-side`, and sends `events` if it was successful or not. Progress is sent using `$store`.
+### Как это работает?
+Оказывается, Uchi.ru проверяет ответы не `server-side`, а `client-side`, и в зависимости от правильности ответа отправляет event через POST-запрос, который сообщает, был ли ответ правильным или нет, а также отправляет текущий прогресс используя event `$store`.
 
-Exercise is marked as solved by sending `$lesson_finish`, but it doesn't change the progress which may get you banned.
-### What are the `events`?
-1) Clicking on buttons
-2) Click on Done button
-3) Dragging
-4) Exercise solved right
-5) Exercise solved wrong
-6) Entire exercise marked as solved
+Карточка помечается решенной при помощи event `$lesson_finish`, который никак не изменяет текущий прогресс, из-за чего вас могут легко спалить (*возможно*) в использовании сторонних утилит или у вашего учителя просто не будет отображатся прогресс.
+### Что значит `event`?
+Uchi.ru использует систему событий (event), которая при честном решении отправляет следущее:
+1) Нажатие по кнопкам мышки
+2) Нажатие по кнопке "Готово"
+3) Перемещение (drag) элементов мышкой
+4) Задание решено правильно
+5) Задание решено неправильно
 
-## Other
-Beads count can't be bypassed, it will throw `no_beads_left` if you try to send a request.
+Они не имеют какого-либо значения для самого решения карточки, но если их не отправить вас могут легко спалить (*возможно*) в использовании сторонних утилит или у вашего учителя просто не будет отображатся прогресс.
+
+События (events) *1* до *3* необязательны.
+### Что значит `server-side`?
+`server-side` переводится как `со стороны сервера`
+### Что значит `client-side`?
+`client-side` переводится как `со стороны клиента`
+
+В этом случае клиент - это браузер.
+### Что значит `POST-запрос`?
+Это обычный запрос на сайт, который, к примеру делает наш браузер (*для более легкого объяснения*, на самом деле браузер отправляет GET запрос) и дает нам данные.
+## Другое
+Обойти количество бесплатных карточек невозможно - он просто отклонит любой запрос и выдаст ошибку `no_beads_left`.
+
+Этот скрипт может работать с *олимпиадами*, но никакой поддержки по ним не оказываю, как уже было сказано выше.
 
