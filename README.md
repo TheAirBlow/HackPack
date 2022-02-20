@@ -3,7 +3,7 @@
 Если хотите поддержать, то вот ссылка на [DonationAlerts](https://www.donationalerts.com/r/theairblow).
 
 ## Доступные взломы
-* 📗 [Uchi.ru](https://uchi.ru) - Аддон Firefox [репозиторий проекта](https://github.com/TheAirBlow/HackPack/blob/main/uchihack)
+* 📗 [Uchi.ru](https://uchi.ru) - Аддон Firefox, [репозиторий проекта](https://github.com/TheAirBlow/HackPack/blob/main/uchihack)
     * Нажмите на кнопку "Solve all exercises", все задания решатся через пару секунд
     * Навсегда останется плагином по техническим причинам
 * 📗 [РЭШ](https://resh.edu.ru) - Аддон Firefox, [репозиторий проекта](https://github.com/TheAirBlow/HackPack/blob/main/rehack)
