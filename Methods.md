@@ -37,12 +37,7 @@ type: "media"
 value: "Мяч в \"АУТ\""
 xmlName: "v2_#"
 xmlValue: "text|Мяч в \"АУТ\"||0"
-<prototype>: Object { … }
 2: Object { name: "v1_2", xmlName: "v1_#", xmlValue: "image|https://dbimg.eu/i/qqdsse0tni.png||0", … }
 ... еще много такой же фигни
 52: Object { name: "feedback", xmlName: "feedback", xmlValue: "Супер! Всё верно.", … }
-find: function find(name)
-groupByListIndex: function groupByListIndex()
-length: 53
-remove: function remove(i)
 ```
