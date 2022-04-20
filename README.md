@@ -12,16 +12,9 @@ P.S. Спойлеры по разработке [тут](https://github.com/TheA
     * Автоматически решит задание, никаких лишних действий
     * ~~может положить ваш интернет~~
 
-* 📗 [SkySmart](https://skysmart.ru) - Единый сайт
-    * Ссылка: https://amogus.somee.com
+https://uchi.ru/homeworks/student/lesson/1027641?taskid=53473
 
-* 📗 [Skills4u](https://skills4u.ru) - Единый сайт
-    * Ссылка: https://amogus.somee.com
-
-* 📗 [Saharina](https://saharina.ru) - Единый сайт
-    * Ссылка: https://amogus.somee.com
-
-* 📗 [TestEdu](https://testedu.ru) - Единый сайт
+* 📗 [SkySmart](https://skysmart.ru), [Skills4u](https://skills4u.ru), [Saharina](https://saharina.ru), [TestEdu](https://testedu.ru) - Единый сайт
     * Ссылка: https://amogus.somee.com
 
 ## Планируются
