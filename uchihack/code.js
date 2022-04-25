@@ -43,7 +43,7 @@ $('body').ready(() => {
         }
 
         if (typeof Card.Player._emitSignal === 'undefined') {
-            console.log("%c[UchiHack]" + "%c \"Card.Player._emitSignal\" detected, this is an old exercise ", style1, style3);
+            console.log("%c[UchiHack]" + "%c \"Card.Player._emitSignal\" not detected, this is an old exercise ", style1, style3);
             isOld = true;
         }
 
