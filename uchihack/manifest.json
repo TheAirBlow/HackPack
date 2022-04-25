@@ -4,7 +4,7 @@
     "version": "2.3.0",
 
     "author": "TheAirBlow",
-    "description": "Injects UchiHack v2.3.0",
+    "description": "Injects UchiHack v2.3.1",
     "permissions": [ "<all_urls>", "tabs", "activeTab", "storage", "webNavigation" ],
 
     "background": {
