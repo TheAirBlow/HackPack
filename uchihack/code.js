@@ -154,7 +154,7 @@ $('body').ready(() => {
         // Кнопки
         if (globalThis.UchiHack.status !== "Решаем") {
             // Решить всю карточку
-            var root = $("<div>").css("margin", "-20px auto 20px").css("width", "1024px");
+            var root = $("<div>").css("margin", "-20px auto 20px").css("width", "960px");
             var obj1 = $("<div>").css("position", "relative").css("border", "1px solid white").css("background", "#ffffff")
                 .css("border-radius", "20px").css("padding", "0 8px 0 8px").css("width", "max-content")
                 .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить карточку")).on("click", function() {
@@ -168,7 +168,7 @@ $('body').ready(() => {
                 .append($("<span style=\"color: black;\"> | Статус: </span>")).append($(`<span style=\"color: ${color};\">${status}</span>`)));
 
             // Решить текущее задание
-            var obj2 = $("<div>").css("position", "relative").css("border", "1px solid white").css("background", "#ffffff").css("left", "83%")
+            var obj2 = $("<div>").css("position", "relative").css("border", "1px solid white").css("background", "#ffffff").css("left", "86%")
                 .css("border-radius", "20px").css("top", "-50px").css("padding", "0 6px 0 8px").css("width", "max-content")
                 .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить задание")).on("click", function() {
                     solve_current();
