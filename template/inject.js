@@ -6,6 +6,6 @@ function wildcard(str, rule) {
 if (wildcard(location.href, "https://uchi.ru*/cards/*")) {
     var el = document.createElement('script');
     el.setAttribute('type', 'text/javascript');
-    el.src = "https://cdn.jsdelivr.net/gh/TheAirBlow/HackPack@uchihack-2.2.5-fix3/uchihack/code.js";
+    el.src = browser.runtime.getURL("code.js");
     document.head.append(el);
 }
