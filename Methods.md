@@ -53,11 +53,9 @@ Sec-Fetch-Site: same-origin
 ### Тест со ссылкой https://uchi.ru/b2t/student/lesson/<ID теста>
 1) Мы должны войти в аккаунт
 2) Дальше получаем ответы
-#### Получить ID заданий в тесте
-Забыл про это :(
 #### Получить ответы на задания
 ```
-POST /b2t/api/v1/students/check_sessions/<ID задания>
+POST /b2t/api/v1/students/check_lessons/<ID теста>
 Accept: application/json
 Content-type: application/json
 Origin: https://uchi.ru
