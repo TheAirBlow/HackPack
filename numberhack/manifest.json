@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "NumberHack",
+    "version": "1.0.0",
+
+    "author": "TheAirBlow",
+    "description": "Выдает сертификат урока цифры без выполнения тренажера. Наберите \"numberhack\" (без кавычек) на клавиатуре с открытой игрой, готово!",
+    "permissions": [ "https://*.datalesson.ru/*", "tabs", "activeTab", "storage", "webNavigation", "storage" ],
+
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+
+    "icons": {
+		"16": "icons/favicon-6.png",
+        "32": "icons/favicon-5.png",
+        "48": "icons/favicon-4.png",
+        "64": "icons/favicon-3.png",
+        "128": "icons/favicon-2.png",
+		"256": "icons/favicon-1.png"
+    }
+}
