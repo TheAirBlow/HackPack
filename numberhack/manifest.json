@@ -5,7 +5,7 @@
 
     "author": "TheAirBlow",
     "description": "Выдает сертификат урока цифры без выполнения тренажера. Наберите \"numberhack\" (без кавычек) на клавиатуре с открытой игрой, готово!",
-    "permissions": [ "https://*.datalesson.ru/*", "tabs", "activeTab", "storage", "webNavigation", "storage" ],
+    "permissions": [ "https://*.datalesson.ru/*", "tabs", "activeTab", "storage", "webNavigation" ],
 
     "background": {
         "scripts": [ "background.js" ]
