@@ -50,23 +50,6 @@ Sec-Fetch-Site: same-origin
 ## 📒 [Uchi.ru](https://uchi.ru)
 ### Тест со ссылкой https://uchi.ru/homeworks/student/lesson/<ID теста>
 Метода не обнаружено
-### Тест со ссылкой https://uchi.ru/b2t/student/lesson/<ID теста>
-1) Мы должны войти в аккаунт
-2) Дальше получаем ответы
-#### Получить ответы на задания
-```
-POST /b2t/api/v1/students/check_lessons/<ID теста>
-Accept: application/json
-Content-type: application/json
-Origin: https://uchi.ru
-Connection: keep-alive
-Sec-Fetch-Dest: empty
-Sec-Fetch-Mode: cors
-Sec-Fetch-Site: same-origin
-```
-
-Ответ: https://gist.github.com/TheAirBlow/62ae32473dc7d6a4a875e1f61dfc9a5a
-
 ## 📒 [LearningApps](https://learningapps.org)
 Функция `AppClient.getParameters()` содержит все ответы.
 ```
