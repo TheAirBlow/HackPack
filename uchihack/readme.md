@@ -15,6 +15,8 @@ https://addons.mozilla.org/addon/uchihack/
 
 ## 🔷 Скриншоты
 ![изображение](https://user-images.githubusercontent.com/68467762/154814568-5c3dbd4d-ef40-4445-b93a-c291492334df.png)
+![Screenshot_20220513_120038](https://user-images.githubusercontent.com/68467762/168228896-c753467f-cf4c-4791-8d63-b91e0677d2ae.png)
+
 
 ## 🔶 Последние изменения
 * v0.1.0 - говнокод
