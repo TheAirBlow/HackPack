@@ -6,4 +6,3 @@ function callback() {
 }
 
 browser.tabs.onUpdated.addListener(callback);
-
