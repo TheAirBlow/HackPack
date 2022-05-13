@@ -1,2 +1,2 @@
 cd $1
-zip -r $1 code.js inject.js background.js manifest.json icons/*
+zip -r $1 *.js manifest.json icons/*
