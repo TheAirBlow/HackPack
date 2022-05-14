@@ -57,7 +57,7 @@ async function main() {
                 return ans.id == amogus[2];
             });
 
-            console.info("%c[UchiHack]" + `%c Загрузка ответом на задание с ID ${amogus[2]}...`, UchiHack.style1, UchiHack.style2);
+            l_info(`Загрузка ответом на задание с ID ${amogus[2]}...`);
             try {
                 rootDiv = $("<div>").css("order", "500").css("margin-top", "20px").addClass("urmom");
 
@@ -106,13 +106,13 @@ async function main() {
                             break;
                     }
 
-                    console.info("%c[UchiHack]" + `%c Загрузка ответов завершена!`, UchiHack.style1, UchiHack.style3);
+                    l_success(`Загрузка ответов завершена!`);
                     loadKatex();
                 }
 
                 setTimeout(main2, 100);
             } catch (error) {
-                console.warn("%c[UchiHack]" + `%c Не удалось решить задние: ${error}!`, UchiHack.style1, UchiHack.style4);
+                l_error(`Не удалось решить задние: ${error}!`);
             }
         }
     }
@@ -142,18 +142,9 @@ async function main() {
     UchiHack = {};
     UchiHack.type = "b2t";
     UchiHack.version = "v2.4.0";
-
-    // ----------------------------------------------------------------------------------
-    // Разноцветная консоль
-    UchiHack.style1 = 'background: #2000ff; color: #ffffff; border-radius: 3px; padding: 2px'; // белый текст на синем
-    UchiHack.style2 = 'background: #222; color: #ffff00; border-radius: 3px; padding: 1px; margin: 1px'; // жёлтый текст на сером
-    UchiHack.style3 = 'background: #222; color: #00ff00; border-radius: 3px; padding: 1px; margin: 1px'; // зелёный текст на сером
-    UchiHack.style4 = 'background: #222; color: #ff0000; border-radius: 3px; padding: 1px; margin: 1px'; // красный текст на сером
-    UchiHack.style5 = 'background: #222; color: #ffffff; border-radius: 3px; padding: 1px; margin: 1px'; // белый текст на сером
-
-    console.warn("%c[UchiHack]" + `%c Версия ${UchiHack.version} (Сделано TheAirBlow)`, UchiHack.style1, UchiHack.style5);
-    console.warn("%c[UchiHack]" + "%c Сначало было на Github Gists, потом перенесено на Github", UchiHack.style1, UchiHack.style5);
-    console.warn("%c[UchiHack]" + "%c Ссылка: https://github.com/theairblow/hackpack/ ", UchiHack.style1, UchiHack.style5);
+    l_exinfo(`Версия ${UchiHack.version} (Сделано TheAirBlow)`, UchiHack.style1, UchiHack.style5);
+    l_exinfo("Сначало было на Github Gists, потом перенесено на Github", UchiHack.style1, UchiHack.style5);
+    l_exinfo("Ссылка: https://github.com/theairblow/hackpack/ ", UchiHack.style1, UchiHack.style5);
 
     await main();
 })();

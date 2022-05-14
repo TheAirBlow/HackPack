@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         REHack
+// @name         UchiHack
 // @namespace    http://github.com/theairblow/hackpack
-// @version      1.0.4
-// @description  Inject REHack v1.0.4
+// @version      2.4.1
+// @description  Injects UchiHack v2.4.1
 // @author       TheAirBlow
 // @match        *://*/*
-// @icon         https://cdn.jsdelivr.net/gh/theairblow/hackpack/rehack/icons/128.png
+// @icon         https://cdn.jsdelivr.net/gh/theairblow/hackpack/uchihack/icons/192.png
 // @grant        none
 // ==/UserScript==
 
@@ -17,7 +17,7 @@
         return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
     }
 
-    var root = "https://cdn.jsdelivr.net/gh/theairblow/hackpack/rehack/";
+    var root = "https://cdn.jsdelivr.net/gh/theairblow/hackpack/uchihack/";
     var rawConfig = await fetch(root + "injector/config.json");
     var config = await rawConfig.json();
 

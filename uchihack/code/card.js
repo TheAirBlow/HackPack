@@ -15,14 +15,14 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Проверка на старую карточку
     if (typeof Card.Player._emitSignal === 'undefined') {
-        console.log("%c[UchiHack]" + "%c \"Card.Player._emitSignal\" не найден, это старое задание ", UchiHack.style1, UchiHack.style3);
+        l_exinfo("\"Card.Player._emitSignal\" не найден, это старое задание");
         isOld = true;
     }
 
     // ----------------------------------------------------------------------------------
     // Отправить API реквест к "events"
     function send_event(a, b) {
-        console.log("%c[UchiHack]" + "%c Отправляем API реквест к \"events\"... ", UchiHack.style1, UchiHack.style2);
+        l_info("Отправляем API реквест к \"events\"...");
         console.group("Информация о реквесте");
         console.log("Событие: ", a);
         console.log("Данные: ", b);
@@ -36,7 +36,7 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Пометить карточку решенной
     function report_solve() {
-        console.log("%c[UchiHack]" + "%c Отправляем \"$lesson_finish\"... ", UchiHack.style1, UchiHack.style2);
+        l_info("Отправляем \"$lesson_finish\"...");
         send_event("$lesson_finish");
         reload_on_sent();
     }
@@ -44,7 +44,7 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Получить Score JSON
     function get_score_json() {
-        console.log("%c[UchiHack]" + "%c Получаем Score JSON... ", UchiHack.style1, UchiHack.style2);
+        l_info("Получаем Score JSON...");
         var n = {};
         Card.Player.__score.save(n); // Работает для старых и новых
         console.group("Score JSON");
@@ -56,7 +56,7 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Solve current exercise
     function solve_current() {
-        console.log("%c[UchiHack]" + "%c Решаем текущее задание... ", UchiHack.style1, UchiHack.style2);
+        l_info("Решаем текущее задание...");
         // Черная магия
         if (Card.Player.__score.current + 1 <= Card.Player.__score.total) // Добавим один к "__score.current"
             Card.Player.__score.current++; // если "__score.total" дает нам
@@ -79,7 +79,7 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Включить автоматическое решение
     function solve_all() {
-        console.log("%c[UchiHack]" + "%c Автоматическое решение включено! ", UchiHack.style1, UchiHack.style3);
+        l_info("Автоматическое решение включено!");
         sessionStorage.setItem('solverUrl', location.href);
         sessionStorage.setItem('doSolve', 'true');
         solve_current();
@@ -117,7 +117,9 @@ function main() {
     // Статус
     color = "green";
 
-    if (sessionStorage.getItem('doSolve') === 'true' && sessionStorage.getItem('solved') !== 'true') {
+    if (sessionStorage.getItem('doSolve') === 'true' 
+        && sessionStorage.getItem('solved') !== 'true'
+        && sessionStorage.getItem('solverUrl') == location.href) {
         color = "orange";
         status = "Решаем";
     } else if (sessionStorage.getItem('solved') === 'true')
@@ -160,9 +162,9 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Автоматическое решение
     if (sessionStorage.getItem('doSolve') === 'true' && sessionStorage.getItem('solverUrl') == location.href) {
-        console.log("%c[UchiHack]" + "%c Продолжаем решение карточки... ", UchiHack.style1, UchiHack.style2);
+        l_info("Продолжаем решение карточки...");
         if (sessionStorage.getItem('solved') === 'true') {
-            console.log("%c[UchiHack]" + "%c Карточка успешно решена! ", UchiHack.style1, UchiHack.style3);
+            l_info("Карточка успешно решена!");
             sessionStorage.setItem('doSolve', 'false');
             sessionStorage.setItem('solved', 'false');
         } else if (Card.Player.__score.current === Card.Player.__score.total) {
@@ -178,8 +180,7 @@ function main() {
         }
     }
 
-    console.log("%c[UchiHack]" + "%c Скрипт закончил свою работу! ", UchiHack.style1, UchiHack.style3);
-
+    l_success("Скрипт закончил свою работу!");
 };
 
 (() => {
@@ -191,17 +192,9 @@ function main() {
     UchiHack.type = "card";
     UchiHack.version = "v2.4.0";
 
-    // ----------------------------------------------------------------------------------
-    // Разноцветная консоль
-    UchiHack.style1 = 'background: #2000ff; color: #ffffff; border-radius: 3px; padding: 2px';
-    UchiHack.style2 = 'background: #222; color: #ffff00; border-radius: 3px; padding: 1px; margin: 1px';
-    UchiHack.style3 = 'background: #222; color: #00ff00; border-radius: 3px; padding: 1px; margin: 1px';
-    UchiHack.style4 = 'background: #222; color: #ff0000; border-radius: 3px; padding: 1px; margin: 1px';
-    UchiHack.style5 = 'background: #222; color: #ffffff; border-radius: 3px; padding: 1px; margin: 1px';
-
-    console.warn("%c[UchiHack]" + `%c Версия ${UchiHack.version} (Сделано TheAirBlow)`, UchiHack.style1, UchiHack.style5);
-    console.warn("%c[UchiHack]" + "%c Сначало было на Github Gists, потом перенесено на Github", UchiHack.style1, UchiHack.style5);
-    console.warn("%c[UchiHack]" + "%c Ссылка: https://github.com/theairblow/hackpack/ ", UchiHack.style1, UchiHack.style5);
+    l_exinfo(`Версия ${UchiHack.version} (Сделано TheAirBlow)`);
+    l_exinfo("Сначало было на Github Gists, потом перенесено на Github");
+    l_exinfo("Ссылка: https://github.com/theairblow/hackpack/");
 
     main();
 })();
