@@ -1,0 +1,9 @@
+{
+    "injector": [
+        {
+            "urls": [ "https://resh.edu.ru/subject/lesson/*/train/*", 
+                "https://resh.edu.ru/subject/lesson/*/control/*" ],
+            "scripts": [ "libs/logging.js", "code/main.js" ]
+        }
+    ]
+}
