@@ -6,7 +6,7 @@ function wildcard(str, rule) {
 }
 
 (async() => {
-    var root = "https://github.com/theairblow/hackpack/blob/main/template/";
+    var root = "https://raw.githubusercontent.com/theairblow/hackpack/main/template/";
     var rawConfig = await fetch(root + "injector/config.json");
     var config = await rawConfig.json();
 
@@ -32,7 +32,7 @@ function wildcard(str, rule) {
     // Запускаем нужные скрипты
     if (glFound) 
         for (const item of js) {
-            var resp = await fetch(root + js);
+            var resp = await fetch(root + item);
             var raw = await resp.text();
             eval(raw);
         }
