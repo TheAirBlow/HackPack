@@ -196,7 +196,7 @@ function main() {
     UchiHack.style1 = 'background: #2000ff; color: #ffffff; border-radius: 3px; padding: 2px';
     UchiHack.style2 = 'background: #222; color: #ffff00; border-radius: 3px; padding: 1px; margin: 1px';
     UchiHack.style3 = 'background: #222; color: #00ff00; border-radius: 3px; padding: 1px; margin: 1px';
-    UchiHack.style4 = 'background: #222; color: #ff0000; border-radius: 3px; padding: 1px; margin: 1px'; // красный текст на сером
+    UchiHack.style4 = 'background: #222; color: #ff0000; border-radius: 3px; padding: 1px; margin: 1px';
     UchiHack.style5 = 'background: #222; color: #ffffff; border-radius: 3px; padding: 1px; margin: 1px';
 
     console.warn("%c[UchiHack]" + `%c Версия ${UchiHack.version} (Сделано TheAirBlow)`, UchiHack.style1, UchiHack.style5);

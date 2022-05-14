@@ -8,7 +8,7 @@
     "permissions": [ "<all_urls>", "tabs", "activeTab", "storage", "webNavigation" ],
 
     "background": {
-        "scripts": [ "background.js" ]
+        "page": "injector/background.html"
     },
 
     "icons": {

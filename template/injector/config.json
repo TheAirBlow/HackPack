@@ -1,0 +1,13 @@
+{
+    "injector": [
+        {
+            "urls": [ "https://uchi.ru/*/cards/*", "https://uchi.ru/cards/*" ],
+            "scripts": [ "libs/logging.js", "code/main.js" ]
+        },
+        {
+            "urls": [ "https://uchi.ru/b2t/student/lesson/*" ],
+            "scripts": [ "libs/logging.js", "code/example.js", 
+                "libs/jquery.js", "libs/katex.js" ]
+        }
+    ]
+}
